@@ -1,7 +1,7 @@
 package com.api.OlimpoFake.Controller;
 
-import com.api.OlimpoFake.Business.PersonsBusiness;
-import com.api.OlimpoFake.Dto.PersonsDto;
+import com.api.OlimpoFake.Business.RolesBusiness;
+import com.api.OlimpoFake.Dto.RolesDto;
 import com.api.OlimpoFake.Utilities.Exception.CustomException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,33 +12,33 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 @RestController
-@RequestMapping("/api/persons")
-public class PersonsController {
+@RequestMapping("/api/roles")
+public class RolesController {
     @Autowired
-    private PersonsBusiness personsBusiness;
+    private RolesBusiness rolesBusiness;
 
-    //End-Point para traer todas las personas
+    //End-Point para traer todos los roles
     @GetMapping("/all")
-    public ResponseEntity<List<PersonsDto>> getAllPersons(){
-        List<PersonsDto> personsList = personsBusiness.findAll();
-        if (personsList.isEmpty()){
+    public ResponseEntity<List<RolesDto>> getAllRoles(){
+        List<RolesDto> rolesList = rolesBusiness.findAll();
+        if (rolesList.isEmpty()){
             return ResponseEntity.noContent().build();
         } else {
-            return ResponseEntity.ok(personsList);
+            return ResponseEntity.ok(rolesList);
         }
     }
 
     //End-Point para traer una persona por Id
     @GetMapping("/{id}")
-    public ResponseEntity<Map<String , Object>> getPersonById(@PathVariable Long id){
+    public ResponseEntity<Map<String , Object>> getRolById(@PathVariable Long id){
         try {
-            PersonsDto persons = personsBusiness.findPersonById(id);
+            RolesDto roles = rolesBusiness.findRolById(id);
             Map<String , Object> response = new HashMap<>();
             response.put("Status" , "success");
-            response.put("data " , persons);
+            response.put("message" , "Todos los roles han sido cargados");
+            response.put("data " , roles);
             response.put("code" , 200);
             return ResponseEntity.ok(response);
         } catch (CustomException e){
@@ -46,14 +46,14 @@ public class PersonsController {
         }
     }
 
-    //End-point para crear una Persona
+    //End-point para crear un Rol
     @PostMapping("/create")
-    public ResponseEntity<Map<String , Object>> createPerson (@Validated @RequestBody PersonsDto personsDto){
+    public ResponseEntity<Map<String ,Object>> createRol (@Validated @RequestBody RolesDto rolesDto){
         try {
-            personsBusiness.create(personsDto);
+            rolesBusiness.create(rolesDto);
             Map<String , Object> response = new HashMap<>();
             response.put("Status" , "success");
-            response.put("message " , "Person Created successfully" );
+            response.put("message " , "Rol Created successfully" );
             response.put("code" , 200);
             return ResponseEntity.ok(response);
         } catch (CustomException e){
@@ -61,40 +61,42 @@ public class PersonsController {
         }
     }
 
-    // End-point para editar-actualizar una persona
+    //End-point para editar-actualizar un rol
     @PutMapping("/update/{id}")
-    public ResponseEntity<Map<String, Object>> updatePerson(@PathVariable Long id, @Validated @RequestBody PersonsDto personsDto) {
+    public ResponseEntity<Map<String , Object>> updateRol (@PathVariable Long id , @Validated @RequestBody RolesDto rolesDto){
         try {
-            personsBusiness.update(id, personsDto);
+            rolesBusiness.update(id, rolesDto);
             Map<String, Object> response = new HashMap<>();
             response.put("status", "success");
-            response.put("message", "Person updated successfully");
+            response.put("message", "Rol updated successfully");
             return ResponseEntity.ok(response);
-        } catch (CustomException e) {
+        } catch (CustomException e){
             return handleException(e);
         }
     }
 
-    // End-point para eliminar una persona
+    //End-point para eliminar una persona
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Map<String, Object>> deletePerson(@PathVariable Long id) {
+    public ResponseEntity<Map<String , Object>> deleteRol (@PathVariable Long id){
         try {
-            personsBusiness.delete(id);
-            Map<String, Object> response = new HashMap<>();
-            response.put("status", "success");
-            response.put("message", "Person deleted successfully");
+            rolesBusiness.delete(id);
+            Map<String , Object> response = new HashMap<>();
+            response.put("status" , "success");
+            response.put("message" , "Rol deleted successfully");
             return ResponseEntity.ok(response);
-        } catch (CustomException e) {
+        } catch (CustomException e){
             return handleException(e);
         }
     }
 
-    // Errores
+    //Errores
     private ResponseEntity<Map<String, Object>> handleException(CustomException e) {
         Map<String, Object> response = new HashMap<>();
         response.put("status", "error");
         response.put("message", e.getMessage());
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
+
+
 
 }
