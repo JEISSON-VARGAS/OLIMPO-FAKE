@@ -8,6 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Getter
@@ -42,8 +43,18 @@ public class ProgramsEntity {
     @Column(name = "update_at")
     private Date updatedAt;
 
-    // Relations
 
+    // Relación One-to-Many con TrainingProjectEntity
+    @OneToMany(mappedBy = "program")
+    private List<TrainingProjectEntity> trainingProjects;
 
+    // Relación Many-to-Many con LearningOutcomesEntity
+    @ManyToMany
+    @JoinTable(
+            name = "programs_learning_outcomes",
+            joinColumns = @JoinColumn(name = "IdProgram"),
+            inverseJoinColumns = @JoinColumn(name = "id_learning_outcome")
+    )
+    private List<LearningOutcomesEntity> learningOutcomes;
 
 }

@@ -2,8 +2,11 @@ package com.api.OlimpoFake.Controller;
 
 import com.api.OlimpoFake.Business.SheetsBusiness;
 import com.api.OlimpoFake.Dto.SheetsDto;
+import com.api.OlimpoFake.Entity.PersonsEntity;
+import com.api.OlimpoFake.Service.SheetsService;
 import com.api.OlimpoFake.Utilities.Exception.CustomException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.expression.spel.ast.Assign;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -42,6 +45,33 @@ public class SheetsController {
             response.put("code" , 200);
             return ResponseEntity.ok(response);
         } catch (CustomException e){
+            return handleException(e);
+        }
+    }
+
+    // End-Point para asignar una ficha a un estudiante
+    @PostMapping("/assign-student/{personId}/{sheetId}")
+    public ResponseEntity<Map<String, Object>> assignSheetToStudent(@PathVariable Long personId, @PathVariable Long sheetId) {
+        try {
+            sheetsBusiness.assignSheetToPerson(personId, sheetId);
+            Map<String, Object> response = new HashMap<>();
+            response.put("status", "success");
+            response.put("message", "Sheet assigned successfully");
+            return ResponseEntity.ok(response);
+        } catch (CustomException e) {
+            return handleException(e);
+        }
+    }
+
+    @GetMapping("/students/{IdSheet}")
+    public ResponseEntity<Map<String, Object>> getStudentsBySheet(@PathVariable Long IdSheet) {
+        try {
+            List<PersonsEntity> students = sheetsBusiness.getStudentsBySheet(IdSheet);
+            Map<String, Object> response = new HashMap<>();
+            response.put("status", "success");
+            response.put("data", students);
+            return ResponseEntity.ok(response);
+        } catch (CustomException e) {
             return handleException(e);
         }
     }
@@ -88,6 +118,15 @@ public class SheetsController {
             return handleException(e);
         }
     }
+
+    //@PostMapping("/assign-students/{userId}")
+     /*try {
+        // Lógica para asignar la ficha a la persona
+        sheetsService.assignSheetToPerson(personId, sheet);
+        return ResponseEntity.ok("Sheet assigned successfully");
+    } catch (CustomException e) {
+        return handleException(e);
+    }*/
 
     // Errores
     private ResponseEntity<Map<String, Object>> handleException(CustomException e) {

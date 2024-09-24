@@ -4,6 +4,7 @@ import com.api.OlimpoFake.Dto.PersonsDto;
 import com.api.OlimpoFake.Entity.PersonsEntity;
 import com.api.OlimpoFake.Entity.RolesEntity;
 import com.api.OlimpoFake.Service.PersonsService;
+import com.api.OlimpoFake.Service.RolesService;
 import com.api.OlimpoFake.Utilities.Exception.CustomException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,8 @@ public class PersonsBusiness {
 
     @Autowired
     private PersonsService personsService;
+    @Autowired
+    private RolesService rolesService;
 
     private final ModelMapper modelMapper = new ModelMapper(); // Instancia de ModelMapper para mapear objetos
 
@@ -66,6 +69,7 @@ public class PersonsBusiness {
             existingPerson.setName(personsDto.getName());
             existingPerson.setLastName(personsDto.getLastName());
             existingPerson.setPhone(personsDto.getPhone());
+            existingPerson.setPhone(personsDto.getPhone());
             existingPerson.setBlood_type(personsDto.getBlood_type());
             existingPerson.setDate_birth(personsDto.getDate_birth());
             existingPerson.setAddress(personsDto.getAddress());
@@ -78,7 +82,7 @@ public class PersonsBusiness {
     }
 
     // Metodo para crear una nueva Persona
-    public void create(PersonsDto personsDto){
+    /*public void create(PersonsDto personsDto){
         try {
             //Verificar si el Documento de la persona ya existe en la base de datos
             String Document = personsDto.getDocument();
@@ -92,17 +96,38 @@ public class PersonsBusiness {
         } catch (Exception e){
             throw new CustomException("Error Creating Person");
         }
+    }*/
+    public void create(PersonsDto personsDto){
+        try {
+            // Verificar si el Documento de la persona ya existe en la base de datos
+            String document = personsDto.getDocument();
+            PersonsEntity existingPerson = personsService.findByDocument(document);
+            if (existingPerson != null){
+                throw new CustomException("The person with Document " + document + " already exists");
+            }
+            // Buscar el rol por idRole
+            RolesEntity role = rolesService.getById(personsDto.getIdRole());
+            if (role == null) {
+                throw new CustomException("Role with ID " + personsDto.getIdRole() + " not found");
+            }
+            // Mapear el Dto a la Entidad
+            PersonsEntity persons = modelMapper.map(personsDto, PersonsEntity.class);
+            persons.setRole(role); // Asignar el rol a la persona
+            personsService.save(persons);
+        } catch (Exception e){
+            throw new CustomException("Error Creating Person: " + e.getMessage());
+        }
     }
 
-    //  Metoo para Eliminar una Persona
-    public void delete (Long IdPerson){
+    // Metodo para Eliminar una Persona
+    public void delete(Long IdPerson) {
         try {
             PersonsEntity persons = personsService.getById(IdPerson);
-            if (persons == null){
+            if (persons == null) {
                 throw new CustomException("Person With id" + IdPerson + "Not Found");
             }
             personsService.delete(persons);
-        } catch (Exception e){
+        } catch (Exception e) {
             throw new CustomException("Error Deleting Person:" + e.getMessage());
         }
     }

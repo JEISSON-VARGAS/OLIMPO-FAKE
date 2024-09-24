@@ -1,5 +1,6 @@
 package com.api.OlimpoFake.Entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,6 +10,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Getter
@@ -49,6 +51,20 @@ public class SheetsEntity implements Serializable {
     @Column(name = "update_at")
     private Date updatedAt;
 
-    // Relations
+    // Relación One-to-One con QuartersEntity
+    @OneToOne
+    @JoinColumn(name = "IdQuarter", referencedColumnName = "IdQuarter")
+    private QuartersEntity quarter;
+
+    // Relación Many-to-One con ProgramsEntity
+    @ManyToOne
+    @JoinColumn(name = "IdProgram", referencedColumnName = "IdProgram")
+    private ProgramsEntity program;
+
+    // Relación One-to-Many con PersonsEntity
+    @OneToMany(mappedBy = "sheet", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private List<PersonsEntity> students;
+
 
 }

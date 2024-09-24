@@ -1,5 +1,6 @@
 package com.api.OlimpoFake.Service;
 
+import com.api.OlimpoFake.Entity.PersonsEntity;
 import com.api.OlimpoFake.Entity.SheetsEntity;
 import com.api.OlimpoFake.Repository.SheetsRepository;
 import com.api.OlimpoFake.Service.Dao.Idao;
@@ -48,5 +49,9 @@ public class SheetsService implements Idao<SheetsEntity , Long>{
 
     public SheetsEntity findByNumber(Integer number) {
         return sheetsRepository.findByNumber(number);
+    }
+
+    public List<PersonsEntity> findStudentsBySheet(Long IdSheet) {
+        return sheetsRepository.findStudentsBySheet(IdSheet);
     }
 }

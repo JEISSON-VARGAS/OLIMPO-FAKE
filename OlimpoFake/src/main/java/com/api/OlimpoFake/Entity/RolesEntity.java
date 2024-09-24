@@ -1,5 +1,6 @@
 package com.api.OlimpoFake.Entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,6 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Getter
@@ -28,4 +30,8 @@ public class RolesEntity implements Serializable {
     @Column(nullable = false, columnDefinition = "boolean default true")
     private Boolean state;
     //Relation With Person
+    // Relación inversa con PersonEntity (opcional)
+    @JsonManagedReference
+    @OneToMany(mappedBy = "role", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<PersonsEntity> persons;
 }

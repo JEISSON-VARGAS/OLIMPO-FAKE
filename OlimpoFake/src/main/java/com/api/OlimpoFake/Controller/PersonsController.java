@@ -47,10 +47,10 @@ public class PersonsController {
         }
     }
 
-    //End-point para crear una Persona
     @PostMapping("/create")
     public ResponseEntity<Map<String , Object>> createPerson (@Validated @RequestBody PersonsDto personsDto){
         try {
+            System.out.println("Datos recibidos: " + personsDto);
             personsBusiness.create(personsDto);
             Map<String , Object> response = new HashMap<>();
             response.put("Status" , "success");
@@ -58,7 +58,12 @@ public class PersonsController {
             response.put("code" , 200);
             return ResponseEntity.ok(response);
         } catch (CustomException e){
+            System.out.println("Error: " + e.getMessage());
             return handleException(e);
+        } catch (Exception e) {
+            System.out.println("Error inesperado: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(Map.of("status", "error", "message", "Unexpected error occurred"));
         }
     }
 
