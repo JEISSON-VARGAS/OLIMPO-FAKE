@@ -5,8 +5,148 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d9b3758-8ffa-4bc4-b647-aee9a79e04f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/OLIMPO-FAKE.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/nb-cache/OlimpoFake-860629783/project-info.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/nb-cache/subprojects.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/nb-cache/trust/E3F0F392CC691F262876C629C15CCD78D9E870B0FAD49F7982BB2AE43DFE66E2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Business/CompetenceBusiness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Business/LearningOutcomesBusiness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Business/ProgramBusiness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Business/QuartersBusiness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Business/RolesBusiness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Business/SheetsBusiness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Business/TrainingProjectBusiness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Controller/CompetenceController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Controller/LearningOutcomesController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Controller/PersonsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Controller/ProgramController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Controller/QuartersController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Controller/RolesController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Controller/SheetsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Dto/CompetenceDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Dto/LearningOutcomesDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Dto/ProgramDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Dto/QuarterNameDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Dto/QuartersDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Dto/RolesDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Dto/SheetsDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Dto/TrainingProjectDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/ApprenticeEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/CompetenceEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/LearningOutcomesEntity$LearningOutcomesEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/LearningOutcomesEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/PersonSheetEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/ProgramsEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/QuarterNameEntity$QuarterNameEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/QuarterNameEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/QuartersEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/SheetsEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/TrainingProjectEntity$TrainingProjectEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/TrainingProjectEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Repository/CompetenceRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Repository/LearningOutcomesRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Repository/ProgramRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Repository/QuartersRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Repository/RolesRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Repository/SheetsRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Repository/TrainingProjectRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Service/CompetenceService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Service/LearningOutcomesService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Service/ProgramService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Service/QuartersService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Service/RolesService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Service/SheetsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Service/TrainingProjectService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ApprenticeEntity.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Business/CompetenceBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Business/LearningOutcomesBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Business/ProgramBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Business/QuartersBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Business/RolesBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Business/SheetsBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Business/TrainingProjectBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Controller/CompetenceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Controller/LearningOutcomesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Controller/ProgramController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Controller/QuartersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Controller/RolesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Controller/SheetsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Dto/CompetenceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Dto/LearningOutcomesDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Dto/ProgramDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Dto/QuarterNameDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Dto/QuartersDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Dto/RolesDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Dto/SheetsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Dto/TrainingProjectDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/ApprenticeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/CompetenceEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/LearningOutcomesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/PersonSheetEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/ProgramsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/QuarterNameEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/QuartersEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/SheetsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/TrainingProjectEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Repository/CompetenceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Repository/LearningOutcomesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Repository/ProgramRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Repository/QuartersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Repository/RolesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Repository/SheetsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Repository/TrainingProjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Service/CompetenceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Service/LearningOutcomesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Service/ProgramService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Service/QuartersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Service/RolesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Service/SheetsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Service/TrainingProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Business/PersonsBusiness.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Business/PersonsBusiness.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Dto/PersonsDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Dto/PersonsDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/PersonsEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/PersonsEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/RolesEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/api/OlimpoFake/Entity/RolesEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/PersonsBusiness.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/PersonsEntity.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/PersonsRepository.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/PersonsService.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Business/PersonsBusiness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Business/PersonsBusiness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Controller/PersonsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Controller/PersonsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Dto/PersonsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Dto/PersonsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/PersonsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/PersonsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/RolesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/OlimpoFake/Entity/RolesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +197,7 @@
   "keyToString": {
     "Gradle.OlimpoFake [:com.api.OlimpoFake.OlimpoFakeApplication.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging jorgeDev",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/fabrica/Desktop/OLIMPO-FAKE/OlimpoFake",
     "project.structure.last.edited": "Project",
