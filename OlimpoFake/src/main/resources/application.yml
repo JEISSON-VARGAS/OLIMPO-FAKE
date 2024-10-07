@@ -5,7 +5,7 @@ spring:
   application:
     name: olimpo_back
   datasource:
-    url:  jdbc:postgresql://localhost:5432/OlimpoDev
+    url:  jdbc:postgresql://localhost:5432/FakeOlimpoDev
     username: postgres
     password: 'fabrica2024*'
     driver-class-name: org.postgresql.Driver
